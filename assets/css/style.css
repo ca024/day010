@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px 300px;
+  background-color: #cee5d0;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+
+header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+img {
+  margin-top: 20px;
+  width: 250px;
+}
+
+h1,
+a,
+button,
+footer {
+  color: #5e454b;
+}
+
+main {
+  width: 750px;
+  margin: 50px auto 25px;
+  background-color: #5e454b;
+  border-radius: 5px;
+  text-align: left;
+  padding: 30px 30px 40px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px 0 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* This replaces the list bullets to vertical bar
+but this is not customizable*/
+/* ul {
+  list-style-type: "❚ ";
+} */
+/* End of noted code*/
+
+/* This customizes the list bullets */
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\007C"; /* Add content: \007C is the CSS Code/unicode for a bullet */
+  color: #5e454b; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 12px; /* Also needed for space (tweak if needed) */
+  margin-left: 3px; /* Also needed for space (tweak if needed) */
+}
+/* End of noted code */
+
+li {
+  line-height: 30px;
+  list-style-position: inside;
+}
+
+.highlighted {
+  color: #f7d59c;
+}
+
+ul .highlighted::before {
+  color: #f7d59c;
+}
+
+a {
+  background-color: #f3f0d7;
+  text-decoration: none;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f7d59c;
+  font-family: "Nunito", sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
