@@ -6,11 +6,12 @@
 }
 
 body {
-  padding: 50px 300px;
+  padding: 50px 0px;
   background-color: #cee5d0;
   font-family: "Nunito", sans-serif;
-  text-align: center;
+  margin: 0 auto;
   color: whitesmoke;
+  text-align: center;
 }
 
 header {
@@ -32,11 +33,11 @@ footer {
 
 main {
   width: 750px;
-  margin: 50px auto 25px;
   background-color: #5e454b;
   border-radius: 5px;
-  text-align: left;
+  margin: 20px auto;
   padding: 30px 30px 40px;
+  text-align: left;
 }
 
 h3 {
@@ -102,4 +103,9 @@ button {
   border: none;
   border-radius: 5px;
   margin-bottom: 3px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
 }
