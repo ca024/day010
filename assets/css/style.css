@@ -85,7 +85,8 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
+a:hover,
+a:active {
   filter: invert(1);
 }
 
