@@ -61,33 +61,22 @@ but this is not customizable*/
 } */
 /* End of noted code*/
 
-/* This customizes the list bullets */
+/* This sets left border */
 ul {
   list-style: none;
 }
 
-ul li::before {
-  content: "\007C"; /* Add content: \007C is the CSS Code/unicode for a bullet */
-  color: #5e454b; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 12px; /* Also needed for space (tweak if needed) */
-  margin-left: 3px; /* Also needed for space (tweak if needed) */
-}
-/* End of noted code */
-
 li {
-  line-height: 30px;
-  list-style-position: inside;
+  margin: 5px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
 }
 
 .highlighted {
   color: #f7d59c;
+  border-color: #f7d59c;
 }
-
-ul .highlighted::before {
-  color: #f7d59c;
-}
+/* End of noted code */
 
 a {
   background-color: #f3f0d7;
