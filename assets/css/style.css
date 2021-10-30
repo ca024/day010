@@ -85,6 +85,10 @@ a {
   border-radius: 5px;
 }
 
+a:hover {
+  filter: invert(1);
+}
+
 button {
   background-color: #f7d59c;
   font-family: "Nunito", sans-serif;
